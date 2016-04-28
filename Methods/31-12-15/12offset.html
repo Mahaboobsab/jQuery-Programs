@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<style>
+div{width:100px;height:100px;margin:10px;float:left; text-align:center;}
+</style>
+<script>
+$(document).ready(function()
+{
+$("div").click(function()
+{
+var offset = $(this).offset();
+$("#lresult").html("left Offset : <span>"+offset.left+"</span>");
+$("#tresult").html("top Offset : <span>"+offset.top+"</span>");
+});
+});
+</script>
+</head>
+<body bgcolor='wheat'>
+</body>
+<h1>Click any square</h1>
+<span id="lresult"></span>
+<span id="tresult"></span>
+<div style="background-color:orange;">Click me!!</div>
+<div style="background-color:yellow;">Click me!!</div>
+<div style="background-color:green;">Click me!!</div>
+<div style="background-color:blue;">Click me!!</div>
+
+</html>
+
+  

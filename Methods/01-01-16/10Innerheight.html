@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+div
+{
+background-color:orange;
+margin:5px;
+height:100px;
+width:100px;
+cursor:pointer;
+
+text-align:center;
+float:left
+
+}
+.mod
+{
+background-color:green;
+}
+</style>
+</head>
+<body bgcolor='pink'>
+<div>A</div>
+<div>B</div>
+<div>C</div>
+<div>D</div>
+<script>
+var modheight=80;
+$("div").one("click",function()
+	{
+	$(this).innerHeight(modheight).addClass("mod");
+	modheight-=8;
+	});
+</script>
+</body>
+</head>
+ 

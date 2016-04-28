@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<style>
+p
+{
+background:orange;
+font-weight:bold;
+cursor:pointer;
+padding:5px;
+}
+
+</style>
+</head>
+<body bgcolor='wheat'>
+<p>This is Meheboob</p>
+<script>
+$("body").delegate("p","click",function()
+	{
+	$(this).after("<p>Click for anothe paragraph</p>");
+	}
+);
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+div
+{
+height:100px;
+width:100px;
+background-color:orange;
+cursor:pointer;
+margin:15px;
+float:left;
+text-align:center;
+}
+.mod
+{
+background-color:green;
+cursor:pointer;
+}
+</style> 
+</head>
+<body bgcolor='wheat'>
+<div>A</div>
+<div>B</div>
+<div>C</div>
+<div>D</div>
+<br>
+
+<script>
+var modWidth=70;
+$("div").one("click",function()
+	{
+	$(this).width(modWidth).addClass('mod');
+	modWidth-=10;
+	});
+	
+</script>
+</body>
+</html>
+
+ 

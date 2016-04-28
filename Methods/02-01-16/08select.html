@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+p
+{
+color:blue;
+}
+div
+{
+color:red;
+}
+</style>
+</head>
+<body bgcolor='wheat'>
+<p>Select text on the box click and drag the text.</p>
+<input type="text" value="www.Neorays.com"><br><br>
+<input type="text" value="Meheboob.com">
+<div></div>
+<script>
+$(":input").select(function()
+	{
+	$("div").text("some text is selected").show().fadeOut(2000);
+	});
+</script>
+</body>
+</html>
+    

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p
+{
+background:orange;
+font-weight:bold;
+padding:5px;
+cursor:pointer;
+}
+  p.over {  
+     background: yellow;  
+  }  
+  span
+  {
+  color:green;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body bgcolor='wheat'>
+<p>CLick or double click on this paragraph</p>
+<span></span>
+<script>
+$("p").bind("click",function(event)
+	{
+	var str = "("+event.pageX+","+event.pageY+")";
+	$("span").text("This is single click !!"+str);
+	});
+	$("p").bind("dblclick",function()
+	{
+	$("span").text("This is double click !!"+this.nodeName);
+	});
+	$("p").bind("mouseenter mouseleave",function(event)
+	{
+	$(this).toggleClass("over");
+	});
+</script>
+</body> 
+</html>
+  

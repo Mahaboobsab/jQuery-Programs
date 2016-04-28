@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<style>
+#hId
+{
+color:blue;
+}
+div
+{
+color:green;
+}
+</style>
+<script>
+$(document).ready(function()
+	{
+	$("#hId").mouseenter(function()
+	{
+	$("div").text("Mouse enter in heading").show().fadeOut(2000);
+	});
+	});
+</script>
+</head>
+<body bgcolor='wheat'>
+<h1 id="hId"> Bring mouse here</h1>
+<div></div>
+</body>
+</html>
+ 

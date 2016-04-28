@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p,ol
+{
+color:blue;
+}
+b
+{
+color:red;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>
+$(document).ready(function()
+	{
+		$("#but1").click(function()
+		{
+		$("p").prepend("<b>Meheboob Nadaf</b>")
+		});
+		$("#but2").click(function()
+		{
+		$("ol").prepend("<li>I am friend with</li>");
+		});
+		
+	});
+</script>
+</head>
+<body bgcolor='wheat'>
+<p>Is the best</p>
+<p>Dynamic</p>
+<p>Brilliant</p>
+<ol>
+	<li>Meheboob</li>
+	<li>soumya</li>
+	<li>Pashya</li>
+	<li>Nadaf</li>
+</ol>
+<button id='but1'>Click here to change Para</button>
+<button id='but2'>Click here to change the list</button>
+</body>
+</html>

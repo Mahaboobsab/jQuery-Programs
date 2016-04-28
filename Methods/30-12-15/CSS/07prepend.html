@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p
+{
+color:blue;
+}
+b
+{
+color:red;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+</head>
+<body bgcolor='pink'>
+<p>This is first para </p>
+<p>This is second para </p>
+<script>
+$(document).ready(function()
+	{
+	$("P").prepend("<b>Hello</b>");
+	//$("P").append("<b>Hello</b>");
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is toggle</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>
+$(document).ready(function()
+	{
+		$("#flip").click(function()
+		{
+			$("#panel").slideDown("slow");
+		});
+	});
+</script>
+<style>
+#panel,#flip
+	{
+		padding:5px;
+		text-align:center;
+		background-color:green;
+		border:solid 1px red;
+	}
+	#panel
+	{
+	padding:50px;
+	display:none;
+	<!--display:block;-->
+	
+	}
+</style>
+</head>
+<body bgcolor="wheat">
+<div id="flip">Click here to get down window on screen
+</div>
+<div id="panel">
+Meheboob nadaf is the one of the best Software engineer in the world!!!!<br>
+Meheboob nadaf is the one of the best Electronics ENGINEER in the world!!!!
+</div>
+</body>
+</html>

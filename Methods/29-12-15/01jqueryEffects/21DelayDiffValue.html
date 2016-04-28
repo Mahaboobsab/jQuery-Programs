@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is toggle</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>
+$(document).ready(function()
+{
+	$("button").click(function()
+	{
+		$("#div1").delay("fast").fadeIn();
+		$("#div2").delay("slow").fadeIn();
+		$("#div3").delay(1000).fadeIn();
+		$("#div4").delay(2000).fadeIn();
+		$("#div5").delay(4000).fadeIn();
+	});
+});
+</script>
+</head>
+<body bgcolor="pink">
+<p>Click here to view with different</p>
+<button>Clock Here!</button><br><br>
+<div id="div1" style="height:100px;width:100px;background-color:red;display:none;"></div><br>
+<div id="div2" style="height:100px;width:100px;background-color:green;display:none;"></div><br>
+<div id="div3" style="height:100px;width:100px;background-color:yellow;display:none;"></div><br>
+<div id="div4" style="height:100px;width:100px;background-color:white;display:none;"></div><br>
+<div id="div5" style="height:100px;width:100px;background-color:blue;display:none;"><br>
+</body>
+</html>

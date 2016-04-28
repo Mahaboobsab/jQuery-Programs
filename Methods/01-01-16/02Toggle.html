@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+ <style>
+ p
+ {
+ color:red;
+ font-size:200%;
+ font-weight:bolder;
+ cursor:pointer;
+ }
+ .blue
+ {
+ color:black;
+ }
+ .highlight
+ {
+	background:pink;
+ }
+ </style>
+ </head>
+ <body bgcolor='wheat'>
+ <p class="blue highlight">Meheboob is </p>
+ <p class=" blue ">Smart</p>
+ <p class=" blue ">Brilliant</p>
+ <p class=" blue"> Dynamic</p>
+  <p class=" blue"> Excellent</p>
+  <script>
+  $("p").click(function()
+	{
+	$(this).toggleClass("highlight");
+	});
+	</script>
+  <button>Click Me</button>
+ </body>
+ </html>
+ 

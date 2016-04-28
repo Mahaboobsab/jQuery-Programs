@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p,li
+{
+color:blue;
+}
+b
+{
+color:green;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script>
+$(document).ready(function()
+	{
+	$("#but1").click(function()
+	{
+	$("p").append("<b>Newly added Item</b>");
+	});
+	$("#but2").click(function()
+	{
+	$("ol").append("<li><b>Newly added Item</b></li>");
+	});
+	});
+</script>
+</head>
+<body bgcolor='pink'>
+<p>Happy New Year</p>
+<p>Happy happy new Near</p>
+<ol>
+	<li>orderd list  :  one</li>
+	<li>orderd list  :  two</li>
+	<li>orderd list  :  three</li>
+</ol>
+<button id='but1'>Click here for para</button>
+<button id='but2'>Click here for Ordered list</button>
+</body>
+</html>

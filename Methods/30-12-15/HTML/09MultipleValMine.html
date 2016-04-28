@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	p
+	{
+		color:blue;
+		margin:5px;
+	}
+	b
+	{
+	color:red;
+	}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+</head>
+<body bgcolor="wheat">
+<p></p>
+<select id="select">
+<option>Meheboob</option>
+<option>meheboobsab</option>
+<option>mabusha</option>
+<option>Mahaboobsab</option>
+</select>
+<select id="multiple" multiple="multiple">
+<option selected="selected">Nadaf</option>
+<option>MRnadaf</option>
+<option>MRN</option>
+<option>Mahaboobsab.n@neorays.com</option>
+</select>
+<script>
+	function valChange()
+	{
+		var NameVar = $("#select").val();
+		var surName = $("#multiple").val();
+		
+		$("p").html("<b>Name : </b>"+NameVar+" "+"<b>LasName : </b>"+surName);
+		}
+		
+		$("select").change(valChange);
+		valChange();
+
+	
+</script>
+</body>
+</html>

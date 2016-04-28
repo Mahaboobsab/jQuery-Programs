@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+	{
+	$("#but1").click(function()
+	{
+	$("body").append($("#p1").detach());
+	});
+	$("#but2").click(function()
+	{
+	$("body").append($("#p2").remove());
+	});
+	$("p").click (function()
+	{
+	$(this).animate({fontSize:"+=1px"})
+	});
+	});
+</script>
+</head>
+<body bgcolor='wheat'>
+<p id="p1"><b>Hello meheboob this para will grow</b></p>
+<p id="p2">This para will not grow</p>
+<button id="but1">Click here!</button>
+<button id="but2">Click here also!!!</button>
+</body>
+</html>
+ 

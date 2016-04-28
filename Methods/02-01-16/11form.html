@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+ <style>
+ p
+ {
+ color:blue;
+ }
+ div
+ {
+ margin:10px;
+ }
+ span
+ {
+ color:red;
+ }
+ </style>
+</head>
+<body bgcolor='wheat'>
+<p>Type Meheboob to submit form</p>
+<form action="javascript:alert('sucsess!');">
+<div>
+<input type="text">
+<input type="submit">
+</div>
+</form>
+<span></span>
+<script>
+$("form").submit(function(event){
+	if($("input:first").val() === "Meheboob")
+	{
+	$("span").text("Submitted Sucsessfully!").show();
+	return;
+	}
+	$("span").text("Not Valid!").show().fadeOut(2000);
+	event.preventDefault();
+	});
+</script>
+</body>
+</html> 

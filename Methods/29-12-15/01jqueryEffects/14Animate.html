@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is toggle</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>
+$(document).ready(function()
+	{
+		$("button").click(function()
+		{
+			$("div").animate({left:'450px'});
+		});
+		
+	});
+</script>
+<body bgcolor="wheat">
+<button>Click here to Animate</button>
+<div style="background-color:green;height:100px;width:100px;position:absolute;"></div>
+</body>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+
+<script>
+$(document).ready(function()
+	{
+	$("#div1").text($("p#p1").hasClass("green"));
+	$("#div2").text($("p#p2").hasClass("green"));
+	});
+</script>
+<style>
+.green{font-size:150%;color:green}
+.red{font-size:150%;color:red}
+</style>
+</head>
+<body bgcolor='wheat'>
+<h1>See below</h1>
+<p class="green" id="p1">This is first paragraph</p>
+<p class="red"id="p2">this is second paragraph</p>
+<div id="div1"class="green" ></div>
+<div id="div2"class="green" ></div>
+</body>
+</html>
+

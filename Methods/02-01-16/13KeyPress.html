@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+j=0;
+$(document).ready(function()
+	{
+	$("input").keypress(function()
+	{
+	$("span").text(j += 1);
+	});
+	});
+</script>
+</head>
+<body bgcolor='wheat'>
+<p>Write Somthing : <input type ="text"></p><br><br>
+<p>No/: of key Pressed : <span>0</span></p>
+</body>
+</html>
+  

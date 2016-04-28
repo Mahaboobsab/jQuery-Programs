@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script>  
+  $(document).ready(function() {     
+   $(".btn").click(function(){   
+    var className = $(this).attr("id");  
+    $("ul li").each(function() {       
+     if ($(this).hasClass(className)) {  
+      $(this).fadeTo('slow', 0.0).fadeTo('slow', 1.0);        
+     }  
+    });      
+   });   
+  });  
+  </script>     
+ <style>  
+  ul{  
+   font-family: monospace;  
+   font-size: 15px;  
+   font-family: monospace;   
+   font-style: normal;  
+   font-size-adjust: none;  
+   width:200px;     
+   padding:0px;   
+  }  
+     
+  ul li{  
+   background-color:orange;  
+   width:100px;  
+   margin:5px;  
+   padding:5px;  
+   list-style-type:none;  
+   width:200px;  
+  }  
+  </style>
+</head>
+<body bgcolor='wheat'>
+<h1>This is an Expl for hasClass:<h1>
+<ul>
+	<li>Red</li>
+	<li>Green</li>
+	<li>Green Red</li>
+	<li>Blue</li>
+</ul>
+<input type="button" class="btn" value="RedClass" id="red">
+<input type="button" class="btn" value="GreenClass" id="Green">
+<input type="button" class="btn" value="BlueClass" id="Blue">
+<input type="button" class="btn" value="NoMatching" id="noclass">
+
+</body>
+</html>
+

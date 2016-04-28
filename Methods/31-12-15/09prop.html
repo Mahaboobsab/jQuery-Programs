@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script>
+$(document).ready(function ()
+	{
+	$("button").click(function()
+	{
+	var $x = $("div");
+	$x.prop("background","red");
+	$x.prop("height","400px");
+	$x.prop("width","200px");
+	$x.append("the val of color prop is : "+$x.prop("background"));
+	$x.removeProp("background");
+	$x.append("<b>Now the prop of color after removing is : </b>"+$x.prop("background"));
+	$x.append("<br>");
+	});
+	});
+</script>
+</head>
+<body bgcolor='wheat'>
+
+<div ></div>
+<button>Click here</button>
+</body>
+</html>
+
+ 

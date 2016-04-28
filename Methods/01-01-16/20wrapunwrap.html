@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+	{
+	$("#but1").click(function()
+	{
+	$("p").wrap("<div></div>");
+	});
+	$("#but2").click(function()
+	{
+	$("p").unwrap();
+	})
+	});
+</script>
+<style>
+div
+{
+background-color:wheat;
+}
+
+</style>
+</head>
+<body >
+
+	<p style="color:orange;">Hello Meheboob</p>
+	<p style="color:yellowgreen;">Happy Republic day In advance</p>
+<button id='but1'>Click here!!!</button>
+<button id='but2'>Click Me To!!!</button>
+</body>
+</html>

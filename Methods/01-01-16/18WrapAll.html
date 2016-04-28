@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script>
+$(document).ready(function ()
+	{
+	$("#but1").click(function()
+	{
+	$("p").wrapAll("<div><marquee></marquee></div>");
+	});
+	$("#but2").click(function()
+	{
+	$("p").unwrap();
+	});
+	});
+</script>
+<style>
+div
+{
+
+width:100px;
+background-color:orange;
+}
+</style>
+</head>
+<body bgcolor='wheat'>
+<P>Hi Meheboob</p>
+<p>Happy New Yeay</p>
+<button id='but1'>Click here to put into block</button>
+<button id='but2'>Click here to remove</button>
+</body>
+</html>
+ 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is toggle</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>
+$(document).ready(function()
+		{
+		$("#flip").click(function()
+		{
+		$("#panel").slideToggle("slow")
+		});
+		});
+</script>
+<style>
+#flip,#panel
+{
+	padding:5px;
+	background-color:green;
+	align=center;
+	border:2px solid red;
+}
+#panel
+{
+	padding:50px;
+	display:none;
+}
+</style>
+</head>
+<body bgcolor="wheat">
+<div id="flip"> Click here to know about Meheboob <br>
+CLick again After knowing</div>
+<div id="panel">Meheboob completed his diploma in electronics enginnering<br>
+BE also in electronics engineering
+<br> Now he is working for NEORAYS</div>
+</body>
+</html>

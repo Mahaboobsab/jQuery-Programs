@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<style>
+.divc
+{
+width:60px;
+margin:5px;
+border:2px solid red;
+padding:2px;
+}
+</style>
+<script>
+$(document).ready(function()
+	{
+	$("div").click(function()
+	{
+	var content = $("<div class='divc'></div>");
+	$("div").wrapAll(content);
+	});
+	});
+</script>
+</head>
+<body bgcolor="wheat">
+<div class="divc" Id="destination">Here I am going to wrap all div</div>
+<div class="divc" style="background-color:orange">ONE</div>
+<div class="divc" style="background-color:blue">TWO</div>
+<div class="divc" style="background-color:pink">THREE</div>
+
+</body>
+</html>
+  

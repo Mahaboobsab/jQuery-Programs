@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+ <style>
+	p
+	{
+	color:blue;
+	margin:4px;
+	}
+	b
+	{
+	color:red;
+	}
+ </style>
+ 
+</head>
+<body bgcolor='wheat'>
+<p></p>
+<br>
+<select id='select'>
+<option>Bengaluru</option>
+<option>Mumbai</option>
+<option>Chennai</option>
+<option>Delhi</option>
+<script>
+function displayVal()
+	{
+	var selection = $("#select").val();
+	$("p").html("<b>Your Selection is : </b>"+selection);
+	}
+	$("select").change(displayVal);
+	displayVal();
+
+</script>
+</select>
+</body>
+</html> 
+
+ 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<head>
+<style>
+div
+{
+background-color:greenyellow;
+height:50px;
+width:200px;
+}
+</style>
+</head>
+<body bgcolor="wheat">
+<h1 style="color:orange">Select your Fav Names</h1>
+<select id="sel" name="mrn">
+<option>Meheboob</option>
+<option>Mabusha</option>
+<option>Maibub</option>
+<option selected="selected">MAHABOOBSAB</option>
+<option>Nadaf</option>
+</select><br><br>
+<div id="div1"></div>
+<script>
+$("select").change(function()
+	{
+	document.getElementById("div1").innerHTML="Your Selection is : "+document.getElementById("sel").value;
+	});
+	</script>
+</body>
+</html>    

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is toggle</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>
+$(document).ready(function()
+	{
+		$("button").click(function()
+		{
+			$("#div1").fadeOut();
+			$("#div2").fadeOut("slow");
+			$("#div3").fadeOut(3000);
+		}
+		);
+	}
+);
+</script>
+</head>
+<body bgcolor="pink">
+<p>Click below button to close the fade out</p><br><br>
+<button>Click here</button>
+<div id="div1" style="height:200px;width:200px;background-color:wheat;">
+</div><br><br>
+<div id="div2" style="height:200px;width:200px;background-color:Red;">
+</div><br><br>
+<div id="div3" style="height:200px;width:200px;background-color:blue;">
+</div><br><br>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is toggle</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>
+$(document).ready(function()
+
+{
+	$("button").click(function()
+	{
+		$("#div1").fadeTo("slow",0.3);
+		$("#div2").fadeTo("slow",0.4);
+		$("#div3").fadeTo("slow",0.5);
+	});
+});
+</script>
+<body bgcolor="pink">
+<p>click here to change the intensity</p><br>
+<button>Click here</button><br><br>
+<div id="div1" style="height:80px;width:80px;background-color:yellow">
+</div><br>
+<div id="div3" style="height:80px;width:80px;background-color:red">
+</div><br>
+<div id="div3" style="height:80px;width:80px;background-color:green">
+</div>
+</body>
+</html>

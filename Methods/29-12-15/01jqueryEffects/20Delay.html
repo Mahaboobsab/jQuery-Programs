@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is toggle</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>
+$(document).ready(function()
+{
+	$("button").click(function()
+	{
+		$("#div1").delay("slow").fadeIn();
+	});
+});
+</script>
+</head>
+<body bgcolor='pink'>
+<button>Click me</button><br><br>
+<div id="div1" style="height:100px;width:100px;display:none;background-color:black"></div><br>
+</body>
+</html>

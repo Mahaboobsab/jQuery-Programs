@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+<script>
+$(document).ready(function()
+	{
+	$("button").click(function()
+	{
+	var x = $("form").serializeArray();
+	$.each(x,function(i,field)
+	{
+	$("#div").append(field.name+" : "+field.value+" ");
+	});
+	});
+	});
+</script>
+</head>
+<body bgcolor='wheat'>
+<form action=''>
+First Name:<input type="text" name="FirstName" value="Meheboob">
+<br>
+Last Name : <input type="text" name="LastName" value="Nadaf">
+<br>
+</form>
+<button>Click here to serialize</button>
+<div id='div'></div>
+</body>
+</html>
+ 
